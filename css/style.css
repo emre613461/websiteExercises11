@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+
+:root {
+  --bg-color: #eb5757;
+  --text-color: #333333;
+  --bg-dark: #222222;
+  --text-white: #f9f9f9;
+  --transition-ease: all 0.3s ease;
+  --brand-color-red: #eb5757;
+  --font-base: "Sen", sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+  color: var(--text-color);
+  line-height: 1.7;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: var(--text-white);
+  transition: var(--transition-ease);
+}
+a:hover {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+}
+img {
+  width: 100%;
+}
+section {
+  padding: 65px 0;
+}
+
+/*Navbar*/
+
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar .nav-link {
+  color: var(--text-white);
+  transition: var(--transition-ease);
+  padding: 4px 12px;
+  margin: 0 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: var(--font-base);
+}
+.navbar .nav-link:hover {
+  background-color: var(--bg-dark);
+}
+.navbar .btn-brand {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  padding: 6px 15px;
+  border-color: var(--bg-dark);
+}
+
+@media (max-width: 992px) {
+  .toggle-block {
+    display: block !important;
+    padding: 6px 15px;
+  }
+  .toggle-none {
+    display: none;
+  }
+}
+/*Header*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://uploads-ssl.webflow.com/62e507bae67b531781108230/62e507bbe67b535fd9108280_wu-jianxiong-UniC8xhlzaE-unsplash.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+header h1 {
+  margin: 20px 0;
+}
+
+.btn-brand-white {
+  color: var(--text-white);
+  border-color: var(--text-white);
+  border-radius: 5px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.btn-brand-white:hover {
+  background-color: var(--text-white);
+  color: var(--bg-dark);
+  font-weight: 700;
+}
+.support-text {
+  position: relative;
+  background-color: var(--bg-dark);
+  height: 350px;
+}
+.bg-color {
+  background-color: var(--bg-dark);
+}
+.support-text h2 {
+  width: 256px;
+  text-align: center;
+}
+.context p {
+  z-index: 1;
+}
+.display-flex {
+  display: flex;
+}
+
+.support-text .bg-img {
+  position: absolute;
+  /* bottom: -85px;
+  right: -90px; */
+  inset: auto -25% -25% auto;
+
+  box-sizing: border-box;
+}
+.support-text .bg-img-donete {
+  position: absolute;
+  /* bottom: -85px;
+  right: -90px; */
+
+  inset: auto -10% -15% auto;
+}
+.support-text .bg-img-3 {
+  position: absolute;
+  width: 90px;
+  inset: auto -10% -15% auto;
+}
+.width {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .support-text h2 {
+    width: 205px;
+  }
+  .context p {
+    width: 250px;
+  }
+  .display-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .width {
+    width: 65%;
+    display: block;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .support-text .bg-img {
+    inset: auto -15% -25% auto;
+  }
+}
+.support-text span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 15px;
+}
+
+.bg-image {
+  background-image: url(https://uploads-ssl.webflow.com/62e507bae67b531781108230/62e507bbe67b534bc4108284_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg);
+  height: 500px;
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.bg-image h2 {
+  font-size: 45px;
+}
+.btn-brand-red {
+  background-color: var(--text-white);
+  color: var(--bg-dark);
+  transition: var(--transition-ease);
+  font-weight: 700;
+}
+.btn-brand-red:hover {
+  background-color: var(--bg-color);
+  color: var(--text-white);
+  border-color: var(--bg-color);
+}
+.btn-brand {
+  background-color: var(--bg-color);
+  color: var(--text-white);
+  padding: 5px 25px;
+  transition: var(--transition-ease);
+  font-weight: 700;
+}
+.btn-brand:hover {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  border-color: var(--bg-dark);
+}
+.size p {
+  font-size: 20px;
+}
+.img img {
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  border-radius: 5px;
+}
+.image {
+  background-image: url("https://uploads-ssl.webflow.com/62e507bae67b531781108230/62e507bbe67b53aa4b108287_christiann-koepke-dQyS2pMYtok-unsplash%20(1).jpg");
+  width: 40%;
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+
+  left: -183px;
+  top: 50px;
+  bottom: 50px;
+}
+.realitive {
+  position: relative;
+
+  width: 80%;
+}
+.position {
+  display: flex;
+  justify-content: end;
+  height: auto;
+  padding: 45px 0;
+  align-items: stretch;
+}
+.content {
+  text-align: left;
+  padding: 45px 145px;
+  color: var(--text-white);
+}
+@media (max-width: 992px) {
+  .realitive {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+    position: inherit;
+  }
+  .position {
+    display: block;
+    position: inherit;
+  }
+  .content {
+    padding: 0;
+  }
+}
+
+footer {
+  padding: 65px 0 10px 0;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top ul {
+  list-style: none;
+  display: flex;
+}
+.footer-top li {
+  font-size: 32px;
+  color: var(--text-white);
+  margin-right: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: var(--transition-ease);
+}
+.footer-top li:hover {
+  color: #f9f9f988;
+}
+@media (max-width: 767px) {
+  /* footer {
+    margin-top: 300px;
+  } */
+  .col-auto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.banner {
+  padding: 20px 0;
+}
